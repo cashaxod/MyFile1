@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Применение карт-изображений</title>
+</head>
+<body>
+    <h1 align="center">Название документа</h1>
+    <iframe src="chapter1.html" name="chapter" align="right" width="700"
+       height="400">
+        <p>Ваш Web-браузер не отображает фреймы</p>
+    </iframe>
+    <img src="foto.gif" alt="Подсказка" width="120" height="240" border="1"
+      usemap="#karta">
+    <map name="karta">
+        <area shape="rect" coords="0,0,120,120" href="chapter1.html"
+        target="chapter" alt="Глава 1">
+        <area shape="rect" coords="0,120,240,240" href="chapter2.html"
+         target="chapter" alt="Глава 2">
+        <area shape="default" alt="" nohref>
+    </map>
+</body>
+</html>
