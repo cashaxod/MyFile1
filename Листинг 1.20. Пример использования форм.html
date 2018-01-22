@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Пример использования форм</title>
+</head>
+<body>
+    <h1>Пример формы регистрации сайта</h1>
+    <form action="file.php" method="post" enctype="multipart/form-data">
+        <div>
+            Логин:<br>
+            <input type="text" name="pole1"><br>
+            Пароль:<br>
+            <input type="password" name="pole2" value="Пароль"><br>
+            URL-адрес сайта:<br>
+            <input type="text" name="pole3" value="http://" size="20"><br>
+            Название сайта:<br>
+            <input type="text" name="pole4" size="20"><br>
+            Описание сайта:<br>
+            <select name="pole6">
+                <option value="0" selected>Тема не выбрана</option>
+                <option value="1">Тема1</option>
+                <option value="2">Тема2</option>
+                <option value="3">Тема3</option>
+            </select><br>
+            Баннер 88*31:<br>
+            <input type="file" name="pole7" size="20"><br><br>
+            <input type="reset" value="Очистить">
+            <input type="submit" value="Отправить">
+        </div>
+    </form>
+</body>
+</html>
