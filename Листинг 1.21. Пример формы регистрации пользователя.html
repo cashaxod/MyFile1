@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Пример формы регистрации пользователя</title> 
+    <style>
+        body {    /*Стиль для всего документа*/
+            font-size: 10pt;    /*Размер шрифта*/
+            font-family: "Verdana", sans-serif;    /*Название шрифта*/
+        }
+        label {    /* Стиль для всех элементов label */
+            display: inline-block;    /* Тип блока */
+            width: 150px;    /* Ширина */
+            vertical-align: top;    /* Вертикальное выравнивание */
+        }
+        select {    /* Стиль для всех списков */
+            width: 250px;    /* Ширина */
+            border: 1px solid black;    /* Определение стиля для границы */
+        }
+        input.pole {    /* Стиль для элемента input, имеющего класс pole */
+            width: 250px;    /* Ширина */
+            border: 1px solid black;    /* Определение стиля для границы */
+        }
+        textarea {    /* Стиль для многострочного текстового поля */
+            width: 250px;    /* Ширина */
+            height: 100px;    /* Высота */
+            border: 1px solid black;    /* Определение стиля для границы */
+        }
+        form div {    /* Стиль для всех div, расположенных внутри form */
+            margin-bottom: 20px; /* Отступ блока снизу */
+        }
+    </style>
+</head>
+<body>
+    <h1>Пример формы регистрации пользователя</h1>
+    <form action="reg.php" method="post" enctype="multipart/form-data">
+        <div><label for="Login">Логин*:</label>
+         <input type="text" name="login" id="login" class="pole"></div>
+        <div><label for="pass1">Пароль*:</label>
+         <input type="password" name="pass1" id="pass1" class="pole"></div>
+        <div><label for="pass2">Повторить пароль*:</label>
+         <input type="password" name="pass2" id="pass2" class="pole"></div>
+         <div><label for="sex1">Пол*:</label>
+          Муж. <input type="redio" name="sex" id="sex1" value="1">
+          Жен. <input type="redio" name="sex" id="sex2" value="2"></div>
+          <div>
+              <label for="education">Образование*:</label>
+              <select name="education" id="education">
+                  <option value=""></option>
+                  <option value="1">Среднее</option>
+                  <option value="2">Высшее</option>
+              </select>
+          </div>
+          <div><label for="commet">Комментарий*:</label>
+              <textarea name="commet" id="commet" cols="15" rows="10"></textarea>
+          </div>
+          <div><label for="userfile">Ваше фото:</label>
+            <input type="file" name="userfile" id="userfile"></div>
+          <div><label for="rule">С правилами согласен*:</label>
+            <input type="checkbox" name="rule" id="rule" value="yes"></div>
+          <div>
+              <input type="submit" value="Отправить" style="margin-left: 150px;">
+          </div>
+    </form>
+</body>
+</html>
