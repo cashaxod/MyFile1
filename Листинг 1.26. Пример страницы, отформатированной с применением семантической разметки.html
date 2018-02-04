@@ -5,6 +5,16 @@
     <title>Семантическая разметка</title>
 </head>
 <body>
+    
+    <input type="email" name="email" required placeholder="Ваш e-mail"><br>
+    <input type="range" name="level" min="1" max="10" step="2"><br>
+    <input type="date" name="birthday" autofocus><br>
+    <input type="text" name="post_code" pattern="[0-9]{6}" 
+    placeholder="Код почтового отделения (шесть цифр)">
+    <br>
+
+    <form action="process_data.php" autocomplete="off" novalidate> . . .
+    </form>
  
   <audio src="sound.mp3"></audio>
   
@@ -14,6 +24,15 @@
   
   <video src="video.webm" controls width="640" height="480" 
   poster="foto.gif"></video>
+  
+  <video>
+      <source src="video.mp4">
+      <source src="video.webm">
+  </video>
+  
+  <audio src="sound.mp3">
+      <div>Ваш Web-обозреватель не поддерживает аудио в стиле HTML 5.</div>
+  </audio>
   
    <header>
        <h1>Семантическая разметка</h1>
