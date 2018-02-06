@@ -1,25 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Пример использования стилей</title>
-    <style type="text/css">
-        .text1 { font-size: 12pt; color: red; font-family: "Arial" }
-        font { font-size: 12pt; color: green; font-family: "Arial" }
-        font.text2 { font-size: 12pt; color:  blue; font-family: "Arial" }
+   <style type="text/css">
+        .text1 {
+            font-size: 12pt;
+            color: red;
+            font-family: "Arial"
+        }
+       
+       p:firts-letter {
+           font-size: 150%;
+           font-weight: bold;
+           color: red;
+       }
+       
+       p:before { content: "before "; }
+       p:after { content: " after"; }
+       ...
+       
+       
+       p:first-line {
+           font-weight: bold;
+           color: red;
+       }
+       
+       div span a { color: red }
+       
+       h1, h2 { font-family: "Arial" }
+       
+       #txt1 { color: red }
+
+        font {
+            font-size: 12pt;
+            color: green;
+            font-family: "Arial"
+        }
+       
+       a[href$=".html"] { color: red }
+       
+       a[href*="link"] { color: red }
+       
+       a[id] { color: red }
+
+        font.text2 {
+            font-size: 12pt;
+            color: blue;
+        }
+       
+       a[href="link1.html"] { color: red }
+       
+       * { margin: 0; padding: 0 }
+       
+       font { font-size: 12pt; color: green; font-family: "Arial" }
+       ...
+       
+       p#txt1 { color: red }
+       ...
+
     </style>
 </head>
+
 <body>
-    <font class="text1">Текст1</font><br>    <!--Красный текст-->
-    <font>Текст2</font><br>                  <!--Зеленый текст-->
-    <font class="text2">Текст3</font><br>    <!--Синий текст-->
-    <p class="text2">Текст4</p>              <!--Цвет по умолчанию-->
-    <p class="text1">Текст5</p>              <!--Красный текст-->
+ 
+ <p>Текст</p>
+  
+  <div>
+      <a href="link1.html">Ссылка 1</a><br>
+      <span><a href="link2.html">Ссылка 2</a></span>
+  </div>
+  
+  <a id="link1" href="link1.html">Ссылка 1</a>
+   
+   ...
+   <p id="txt1">Текст</p>
+   
+   <div>Текст</div><a href="link.html">Ссылка</a>
+   
+    <div>
+        <a href="link1.html">Ссылка 1</a>
+        <span>
+           <a href="link2.html">Ссылка 2</a>
+        </span>
+    </div>
+   
+   <font size="3">Текст</font><br><br><br>
+   
+   <font style="font-size: 12pt">Текст</font>
+   
+   <font style="font-size: 12pt; color: red">Текст</font>
+   
+   <font style="font-size: 12pt; color: red;
+   font-size: 'Times New Roman'">Текст</font>
+   
+   <font style="font-size: 12pt">Текст</font>
+   
+   <br><br><br>
+    <!--Красный текст-->
+    ...
+    <font class="text1">Текст1</font><!--Красный текст-->
+    <p class="text1">Текст2</p><!--Красный текст-->
+    
+    <font>Текст2</font><br><!--Зеленый текст-->
+    ...
+    <font class="text2">Текст1</font><!--Синий текст-->
+    
+    <p id="txt1">Текст</p>
+    
+    <div><a href="link.html">Ссылка</a></div>
+    
+    <!--Цвет по умолчанию-->
+    <p class="text2">Текст2</p>
+    <!--Красный текст-->
+    <p class="text1">Текст5</p>
 </body>
+
 </html>
-
-
-
-
-
-
