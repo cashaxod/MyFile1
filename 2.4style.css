@@ -1,5 +1,26 @@
 p {
+    font-size: 12pt;
     color: red;
+    font-family: "Arial";
+    line-height: 5mm
 }
 
+p {
+    word-spacing: normal;
+    font-style: italic;
+    font-weight: normal
+}
+.txt {
+    font-size: 12pt;
+    font-family: "Arial";
+    color: #00FF00;
+}
+.txt {
+    font-size: 12pt;
+    font-family: "Arial";
+    color: rgb(255,0,0);
+}
 
+p {
+    font-family: "Verdana", "Tahoma" sans-serif;
+}
